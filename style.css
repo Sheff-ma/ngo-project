@@ -58,6 +58,17 @@ body{
     height: auto;
     border-radius: 0 30px 0 30px !important;
 }
+.carousel-inner {
+    display: flex !important;
+    align-items: center !important;
+}
+.card{
+    border-radius: 0 30px 0 30px !important;
+}
+.card img{
+    border-radius: 0 30px 0 30px !important;
+}
+
 
 
 @media (max-width:1024px) {
