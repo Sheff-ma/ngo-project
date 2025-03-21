@@ -1,99 +1,122 @@
-*{
+/* Universal Reset */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-}
-body{
-    background: #e1e1e1 !important;
+    box-sizing: border-box;
 }
 
-.navbar-brand img{
-    width: 150px;
-    max-width: 300px;
-    padding: 0 50px 0 5px;
+/* Body Styling */
+body {
+    background: #e1e1e1;
 }
+
+/* Navbar */
+.navbar-brand img {
+    width: 150px !important;
+    max-width: 300px !important;
+    padding: 0 50px 0 5px !important;
+}
+
+/* FontAwesome Icons */
 .fa-solid,
 .fa-brands {
-    padding: 0 10px;
+    padding: 0 10px !important;
 }
-.btn{
-    border: 1px solid;
+
+/* Buttons */
+.btn {
+    border: 1px solid !important;
     background: #ffa600 !important;
     border-radius: 0 10px 0 10px !important;
     color: #fff !important;
     font-weight: 600 !important;
 }
-.btn:hover{
-    border: 1px solid #ffa600 !important;
+
+.btn:hover {
+    border-color: #ffa600 !important;
     color: #000 !important;
     background: transparent !important;
 }
-.btn-1, 
-.btn-2{
-    border-radius: 0 10px 10px 10px !important;
-}
-.btn-1{
+
+/* Button Variants */
+.btn-1 {
     background: #002015 !important;
 }
 .btn-2 {
     background: #000 !important;
 }
-.mini-sec{
-    height: 500px !important;
-    background: #fff !important;
-    margin: 0 20px !important;
-    padding: 20px !important;
-    border-radius: 0 30px 0 30px !important;
+.btn-1, .btn-2 {
+    border-radius: 0 10px 10px 10px !important;
 }
-.section-one{
+
+/* Mini Section */
+.mini-sec {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border-radius: 0 10px 10px 10px !important;
+}
+
+/* Section One */
+.sec-one {
     position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 20px !important;
 }
-.sec-one{
-    position: absolute !important;
-    top: 50px;
-    left: 600px;
-}
-.sec-one img{
-    max-width: 100% !important;
+
+.sec-one img {
+    max-width: 100%;
     height: auto;
-    border-radius: 0 30px 0 30px !important;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0 10px 10px 10px !important;
 }
+/* Carousel */
 .carousel-inner {
     display: flex !important;
     align-items: center !important;
 }
-.card{
+
+/* Cards */
+.card {
     border-radius: 0 30px 0 30px !important;
     display: flex !important;
     flex-direction: column !important;
 }
-/* .card img{
-    border-radius: 0 30px 0 30px !important;
-    height: 200px !important; 
-    object-fit: cover !important;
-    width: 100% !important;
-} */
-.section-three h1{
+
+/* Section Three */
+.section-three h1 {
     font-size: 3rem !important;
     font-weight: 600 !important;
     margin: 20px 0 !important;
 }
-.section-three h5{
+
+.section-three h5 {
     font-size: 2rem !important;
     font-weight: 600 !important;
     margin: 10px 0 !important;
 }
-.section-three i{
+
+.section-three i {
     font-size: 5rem !important;
     color: #ffa600 !important;
     margin: 20px 0 !important;
 }
-.section-four {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-}
 
+/* Section Four */
+.section-four {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+}
 .first-half {
     display: grid;
     position: relative;
@@ -113,7 +136,6 @@ body{
 }
 
 .overlaytext {
-    /* grid-template-columns: 1fr 1fr; */
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     display: flex;
@@ -125,94 +147,250 @@ body{
     padding: 20px;
     text-align: right;
 }
-.form{
+
+/* Form Section */
+.form {
     background-image: url('img/img1.jpeg') !important;
     background-size: cover !important;
     background-position: center !important;
     height: 800px !important;
     border-radius: 0 40px 0 40px !important;
-    margin: 30px;
-    padding: 30px;
+    margin: 30px !important;
+    padding: 30px !important;
 }
-.form-control{
+
+.form-control {
     border-radius: 0 10px 0 10px !important;
-    /* width: 600px !important;
-    height: 50px !important; */
 }
-span{
+
+/* Span Text */
+span {
     color: #000 !important;
     font-weight: 600 !important;
 }
-.footer li{
-    list-style: none !important;
-    margin: 15px 0 0 -10px !important;
+
+/* Footer */
+/* Footer Styling */
+.footer {
+    margin-top: 100px !important;
+    background: #262118 !important;
+    padding: 50px 0 !important;
+    color: #d4d4d4 !important;
 }
-.footer i:hover{
-    color: #ffa600 !important;
-    scale: 1.5 !important;
+
+/* Logo */
+.footer img {
+    width: 180px !important;
+    max-width: 100% !important;
 }
-.footer-end{
-    background: #13110c !important;
+
+/* Contact Info */
+.footer h4 {
     color: #fff !important;
-    padding: 30px !important;
-}
-/* .card-body {
-    flex-grow: 1 !important; 
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-} */
-
-
-
-
-/* @media (max-width:1024px) {
-    .fa-solid,
-    .fa-brands {
-    padding: 0 7px;
-}
-    .sec-one{
-        position: absolute !important;
-        top: 135px !important;
-        left: 500px !important;
-    }
-    .sec-one img{
-        max-width: 500px !important;
-        height: auto !important;
-    }
-    .cont{
-        margin: 0 20px !important;
-    }
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
 }
 
-@media (max-width:768px) {
-    .sec-one{
-        position: absolute !important;
-        top: 500px !important;
-        left: 150px !important;
-    }
-    .mini-sec{
-        height: 400px !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .mini{
-        width: 700px !important;
-    }
-    .mini-text{
-        margin-left: 200px;
+.footer ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.footer li {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+}
+
+.footer .text-warning {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+}
+
+/* Newsletter Input */
+.footer input.form-control {
+    width: 100% !important;
+    height: 45px !important;
+    background-color: #d8eaf9 !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+}
+
+.footer button.btn {
+    width: 100% !important;
+    height: 45px !important;
+    border-radius: 5px !important;
+    background: #ffa600 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    border: none !important;
+    transition: 0.3s !important;
+}
+
+.footer button.btn:hover {
+    background: #ff8c00 !important;
+    color: #000 !important;
+}
+
+/* Quick Links */
+.footer ul.list-unstyled li {
+    cursor: pointer !important;
+    transition: color 0.3s ease-in-out !important;
+}
+
+.footer ul.list-unstyled li:hover {
+    color: #ffa600 !important;
+}
+
+/* Social Media Icons */
+.footer .icons i {
+    font-size: 1.5rem !important;
+    margin-right: 10px !important;
+    cursor: pointer !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.footer .icons i:hover {
+    color: #ffa600 !important;
+    transform: scale(1.2) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer .text-center {
         text-align: center !important;
-        justify-content: center !important;
-    }
-    .sec-one img{
-        max-width: 500px !important;
-        height: auto !important;
-    }
-    .cont{
-        width: 20rem !important;
+        margin-bottom: 20px !important;
     }
 }
-@media (max-width: 425px){
+
+
+
+
+@media (max-width: 1024px) {
+
+    /* Adjust text sizes for better readability */
+    .carousel h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel p {
+        font-size: 0.95rem;
+    }
+
+    /* Ensure cards take full width while maintaining margins */
+    .card {
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto; /* Centering the card properly */
+    }
+
+    /* Prevent horizontal scrolling */
+    .container {
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+
+    /* Ensure proper margin spacing */
+    .cont {
+        margin: 0 10px;
+        display: flex; /* Ensures better alignment, if necessary */
+        flex-wrap: wrap;
+    }
+
+    /* Optimize button sizing */
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    /* Remove fixed positioning and use better alignment for responsiveness */
+    .sec-one {
+        position: relative; /* Allows better responsiveness */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Ensure images scale properly */
+    .sec-one img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel p {
+        font-size: 0.9rem;
+    }
+
+    .carousel img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100%; 
+        max-width: 350px;
+        margin: 10px auto;
+    }
+
+    .text-start {
+        text-align: center;
+    }
+
+    .nav-pills {
+        margin-top: 150px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sec-one img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .mini-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .mini-sec {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .mini {
+        width: 100%;
+        max-width: 500px;
+    }
+    .footer .text-center {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* @media (max-width: 425px){
     .sec-one{
         position: absolute !important;
         top: 600px !important;
