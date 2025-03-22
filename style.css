@@ -91,6 +91,12 @@ img{
     display: flex !important;
     flex-direction: column !important;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Change background color to dark */
+    border-radius: 50%; /* Optional: Makes the button circular */
+    padding: 10px; /* Adds some spacing */
+}
 
 /* Section Three */
 .section-three h1 {
@@ -386,11 +392,7 @@ span {
         text-align: center;
         margin-bottom: 20px;
     }
-}
 
-
-
-/* @media (max-width: 425px){
     .sec-one{
         position: absolute !important;
         top: 600px !important;
